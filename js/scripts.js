@@ -8,15 +8,21 @@ $(document).ready(function(){
     var ansfour=$("input:radio[name=q4]:checked").val();
     var ansfive=$("input:radio[name=q5]:checked").val();
 
-    // console.log(ansone,anstwo,ansthree,ansfour,ansfive);
+    console.log(ansone,anstwo,ansthree,ansfour,ansfive);
+    $("#option1").hide();
+    $("#option2").hide();
+    $("#option3").hide();
 
-    if ((ansone==FED)&&(anstwo==yes)&&
-    (ansthree==no)&&(ansfour==no)&&
-    (ansfive==no))
+    if (ansone==='BED' && anstwo==='yes')
+
+     // &&ansthree==='no' && ansfour==='no' && ansfive==='no')
     {
-        $("#option1").show();
-    }else {
       $("#option2").show();
+    }else if(ansone==='FED' && ansthree==='yes')
+    {
+      $("#option1").show();
+    }else if(ansone==='BED' && ansfour==='yes'){
+      $("#option3").show();
     }
 
   });
