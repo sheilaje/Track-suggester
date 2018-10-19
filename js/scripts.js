@@ -13,13 +13,13 @@ $(document).ready(function(){
     $("#option2").hide();
     $("#option3").hide();
     $("#option4").hide();
-
+    $("#option5").hide();
     if(anstwo==null || ansfour==null || ansone==null ||ansthree==null || ansfive==null)
     {
       $("#option4").show();
     }
 
-    else if(ansone==="Front End Developer")
+    else if(ansone==="Front End Developer" && ansfive==="yes")
     {
       $("#option1").show();
     }else
@@ -31,5 +31,8 @@ $(document).ready(function(){
          {
           $("#option2").show();
         }
+      else {
+        $("#option5").show();
+      }
   });
 });

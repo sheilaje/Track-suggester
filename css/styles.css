@@ -14,6 +14,10 @@
   display: none;
 }
 
+#option5{
+  display: none;
+}
+
 body{
   background-color: grey;
   color: #2e2e2e;
