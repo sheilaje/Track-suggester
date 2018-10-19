@@ -12,8 +12,14 @@ $(document).ready(function(){
     $("#option1").hide();
     $("#option2").hide();
     $("#option3").hide();
+    $("#option4").hide();
 
-    if(ansone==="Front End Developer")
+    if(anstwo==null || ansfour==null || ansone==null ||ansthree==null || ansfive==null)
+    {
+      $("#option4").show();
+    }
+
+    else if(ansone==="Front End Developer")
     {
       $("#option1").show();
     }else
@@ -24,9 +30,6 @@ $(document).ready(function(){
       else if(ansone==="Back End Developer" && ansthree==="yes" && anstwo!="yes")
          {
           $("#option2").show();
-        }else if(anstwo===" " ||    ansfour===" " || ansone===" " ||ansthree===" " || ansfive===" ")
-        {
-          $("#option4").show();
         }
   });
 });
