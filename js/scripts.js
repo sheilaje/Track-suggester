@@ -13,20 +13,20 @@ $(document).ready(function(){
     $("#option2").hide();
     $("#option3").hide();
 
-    if(anstwo==="yes" && ansfour==="yes")
+    if(ansone==="Front End Developer")
+    {
+      $("#option1").show();
+    }else
+    if(anstwo==="yes" &&    ansfour==="yes" && ansone!="Front End Developers" && ansthree!="yes" && ansfive!="yes")
       {
         $("#option3").show();
-      }else
-      if(ansone==="FED")
-      {
-      $("#option1").show();
-      }else
-        if (ansone==="BED")
-        {
+      }
+      else if(ansone==="Back End Developer" && ansthree==="yes" && anstwo!="yes")
+         {
           $("#option2").show();
+        }else if(anstwo===" " ||    ansfour===" " || ansone===" " ||ansthree===" " || ansfive===" ")
+        {
+          $("#option4").show();
         }
-
-
-
   });
 });
