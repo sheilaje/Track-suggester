@@ -10,6 +10,7 @@
   </head>
   <body>
     <h1>Survey Questions</h1>
+
     <div class="container">
 
       <h4>Answer the following Questions to determine which <em>Track</em> suits u best!!</h4>
@@ -23,7 +24,7 @@
       <div class="form-group">
         <label for="frontback">1)<strong> Front-end developers, </strong> spend their time developing the User interface logic.<strong>Back-end developers, </strong>,develop the business logic.Do you like to be a Front end developer or a back end developer?</label>
 
-        <div class="radio">
+        <!-- <div class="radio">
           <label>
             <input type="radio" name="q1" value="FED">Front End Developer
           </label>
@@ -33,7 +34,14 @@
           <label>
             <input type="radio" name="q1" value="BED">Back End Developer
           </label>
-        </div>
+        </div> -->
+
+        <select class="form-control" id="animal-select">
+          <option>Front End Developer</option>
+          <option>Back End Developer</option>
+          <option>Interested in both</option>
+        </select>
+
       </div>
 <!-- Question 2 -->
       <div class="form-group">
@@ -113,7 +121,7 @@
     </div>
 
     <div id="option3">
-      <h2>The best matched course based on your interests is Ruby/Rails.</h2>
+      <h2>The best matched course based on your interests is Java.</h2>
     </div>
     <!-- </div> -->
 
